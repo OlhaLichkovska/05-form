@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 35%;
+            height: 55%;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        .input {
+            width: 75%; 
+            padding: 6px; 
+            box-sizing: border-box;
+            margin-top: 6px; 
+            margin-bottom: 10px;
+            float: right;            
+        }
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="#" method="get">
+            <br>
+           <label> Повне ім'я</label>
+            <div class="input">
+                <input type="text" name="full-name" required>
+            </div> 
+            <br>
+            <label>Email</label> 
+            <div class="input">
+                <input type="email" name="email" required>
+            </div>
+            <br>
+            <label>Пароль</label> 
+            <div class="input">
+                <input type="password" name="pass" required>
+            </div>
+            <br>
+            <label>Пароль ще раз</label> 
+            <div class="input">
+                <input type="password" name="pass-repeat" required>
+            </div>
+            <br>
+            <label>Стать</label> 
+            <label>
+                <input type="radio" name="sex" value="male">чоловіча
+            </label>
+            <label>
+                <input type="radio" name="sex" value="female"> жіноча
+            </label>            
+            <br>
+            <label> Вік</label>
+            <div class="input">
+                <input type="number" name="age" min="15" max="100">
+            </div>            
+            <br>
+            <label>Курс</label> 
+            <div class="input">
+                <select name="course" id="course">
+                    <option value="Front-End">Front-End</option>
+                    <option value="Back-End">Back-End</option>
+                    <option value="Project Management">Project Management</option>
+                    <option value="QA Manual">QA Manual</option>
+                </select>
+            </div>            
+            <br>
+            <label>Повна адреса</label>
+            <div class="input">
+                <textarea name="address" placeholder="Країна, регіон, місто/селище, вулиця"></textarea>
+            </div>
+            <br>
+            <label>
+                <input type="checkbox" name="privacy">Я погоджуюсь з обробкою персональних даних
+            </label>
+            <br>
+            <button type="reset">Очистити форму</button>
+            <button type="submit">Зареєструватися</button>
+        </form>
+    </div>
+</body>
+</html>
